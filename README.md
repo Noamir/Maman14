@@ -7,7 +7,7 @@ As always, I attached the .pdf file explaining the tasks.
 This time, it's 1 class, with 4 static methods.
 Each one is separated and stands for it's own.
 
-Please see Ex14 as main project, it contains all methods.
+Please see src/Ex14.java as main project, it contains all methods.
 Other classes are tests.
 
 Thanks!! 
