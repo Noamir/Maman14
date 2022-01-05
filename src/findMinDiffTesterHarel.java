@@ -9,7 +9,7 @@
  *   created by B.A.
  */
 
-public class Ex14FindMinDiffTester extends Ex14
+public class findMinDiffTesterHarel extends Ex14
 {
     public static void main(String args[])
     {

@@ -3,8 +3,8 @@
  *  Harel Erlich
  *  15/12/2021
  */
-public class Ex14SearchTest1 extends Ex14 {
-    public static void main (System [] args) {
+public class searchTesterHarel extends Ex14 {
+    public static void main (String [] args) {
         //check array size 8x8
         String ans = "";
         int [][] array1 = new int [][] {{1,2,5,6,17,18,21,22},{4,3,8,7,20,19,24,23},{13,14,9,10,29,30,25,26},{16,15,12,11,32,31,28,27},

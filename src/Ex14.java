@@ -102,9 +102,13 @@ public class Ex14 {
         if (arr.length % 2 != 0) // array length is not zugi. bye
             return false;
 
+        int arrSum = sumArray(arr, 0);
+        if (arrSum % 2 != 0)
+            return false; // array sum is not zugi. bye
+
         int groupMembers = arr.length / 2; // each group number of members
 
-        int groupSum = sumArray(arr, 0) / 2; // each group sum
+        int groupSum = arrSum / 2; // each group sum
 
         return equalSplit(arr, 0, groupMembers, groupSum); // need to find groupMembers which together are groupSum
     }
@@ -113,7 +117,7 @@ public class Ex14 {
         if (index == arr.length)
             return false;
 
-        if (sum < 0 || num < 0)
+        if (num < 0)
             return false;
 
         if (sum == 0 && num == 0)
@@ -127,6 +131,23 @@ public class Ex14 {
         if (i == a.length)
             return 0;
         return a[i] + sumArray(a, i + 1);
+    }
+
+
+    // Q4
+    public static boolean isSpecial(int n) {
+        return isSpecial(n, 2);
+    }
+
+    private static boolean isSpecial(int currPlace, int deletePlace) {
+        if (currPlace % deletePlace == 0 || currPlace <= 0)
+            return false;
+
+        if (currPlace < deletePlace)
+            return true;
+
+
+        return isSpecial(currPlace - currPlace / deletePlace, deletePlace + 1);
     }
 }
 
